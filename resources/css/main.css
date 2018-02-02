@@ -24,4 +24,11 @@ header {
       header .container .row form i:hover {
         background-color: #ff00ab; }
 
+/* Column Headers */
+#columns {
+  background-color: #6800ff;
+  color: white; }
+  #columns .container .row span {
+    display: block; }
+
 /*# sourceMappingURL=main.css.map */
