@@ -1,0 +1,45 @@
+@import "../helpers/variables";
+
+header {
+  background-color: $darkpurple;
+
+  .container {
+    padding: 2.75rem 0;
+
+    .row {
+      #logo {
+        font-family: Righteous, cursive;
+        font-size: 2.5rem;
+
+        a {
+          color: $darkpink;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      form {
+        i,
+          input {
+          border-radius: 19px;
+        }
+
+        input {
+          margin-right: 0.625rem;
+        }
+
+        i {
+          color: $darkpurple;
+          background-color: rgb(255, 102, 204);
+          cursor: pointer;
+
+          &:hover {
+            background-color: $darkpink;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous|Work+Sans");
+/* Universal Styles */
+/* Header */
+header {
+  background-color: #23023f; }
+  header .container {
+    padding: 2.75rem 0; }
+    header .container .row #logo {
+      font-family: Righteous, cursive;
+      font-size: 2.5rem; }
+      header .container .row #logo a {
+        color: #ff00ab; }
+        header .container .row #logo a:hover {
+          text-decoration: none; }
+    header .container .row form i,
+    header .container .row form input {
+      border-radius: 19px; }
+    header .container .row form input {
+      margin-right: 0.625rem; }
+    header .container .row form i {
+      color: #23023f;
+      background-color: #ff66cc;
+      cursor: pointer; }
+      header .container .row form i:hover {
+        background-color: #ff00ab; }
+
+/*# sourceMappingURL=main.css.map */

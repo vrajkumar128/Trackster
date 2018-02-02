@@ -2,7 +2,7 @@ var Trackster = {};
 
 /*
   Given an array of track data, create the HTML for a Bootstrap row for each.
-  Append each "row" to the container in the body to display all tracks. 
+  Append each "row" to the container in the body to display all tracks.
 */
 Trackster.renderTracks = function(tracks) {
 
