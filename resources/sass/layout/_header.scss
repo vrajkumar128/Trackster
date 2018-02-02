@@ -5,6 +5,7 @@ header {
 
   .container {
     padding: 2.75rem 0;
+
     .row {
       #logo {
         font-family: Righteous, cursive;
@@ -21,12 +22,29 @@ header {
 
       form {
         i,
-          input {
+        input {
           border-radius: 19px;
         }
 
         input {
           margin-right: 0.625rem;
+          color: rgb(74, 74, 74);
+
+          &::-webkit-input-placeholder {
+            color: rgb(191, 191, 191);
+          }
+
+          &:-ms-input-placeholder {
+            color: rgb(191, 191, 191);
+          }
+
+          &::-ms-input-placeholder {
+            color: rgb(191, 191, 191);
+          }
+
+          &::placeholder {
+            color: rgb(191, 191, 191);
+          }
         }
 
         i {

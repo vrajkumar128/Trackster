@@ -16,7 +16,16 @@ header {
     header .container .row form input {
       border-radius: 19px; }
     header .container .row form input {
-      margin-right: 0.625rem; }
+      margin-right: 0.625rem;
+      color: #4a4a4a; }
+      header .container .row form input::-webkit-input-placeholder {
+        color: #bfbfbf; }
+      header .container .row form input:-ms-input-placeholder {
+        color: #bfbfbf; }
+      header .container .row form input::-ms-input-placeholder {
+        color: #bfbfbf; }
+      header .container .row form input::placeholder {
+        color: #bfbfbf; }
     header .container .row form i {
       color: #23023f;
       background-color: #ff66cc;
@@ -26,9 +35,8 @@ header {
 
 /* Column Headers */
 #columns {
+  font-family: "Work Sans", sans-serif;
   background-color: #6800ff;
   color: white; }
-  #columns .container .row span {
-    display: block; }
 
 /*# sourceMappingURL=main.css.map */
