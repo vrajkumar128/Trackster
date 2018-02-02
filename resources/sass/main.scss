@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Work+Sans:400,600');
 
 
 /* Universal Styles */
 
-
+body {
+  font-family: "Work Sans", sans-serif;
+}
 
 /* Header */
 
@@ -12,3 +14,8 @@
 /* Column Headers */
 
 @import "./layout/columns";
+
+
+/* Song List */
+
+@import "./layout/songs";

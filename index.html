@@ -18,7 +18,7 @@
       <div class="row d-flex align-items-center">
         <h1 class="col-xs-7 offset-xs-1" id="logo"><a href="#">trackster</a></h1>
         <form class="form-inline ml-auto">
-          <input class="col-xs-2 py-1 px-4 pr-5" id="search-box" type="search" placeholder="Whatchya lookin' for?" aria-label="Search">
+          <input class="col-xs-2 py-1 px-4 pr-5" id="search-box" type="search" placeholder="Search" aria-label="Search">
           <i class="col-xs-1 fa fa-search fa-lg px-4 py-3" id="search-button"></i>
         </form>
       </div>
@@ -27,25 +27,30 @@
 
   <!-- Column Headers -->
   <section id="columns">
-    <div class="container py-2">
+    <div class="container-fluid py-2">
       <div class="row">
-        <div class="col-1">
-          <span>#</span>
-        </div>
-        <div class="col-3">
+        <div class="col-3 offset-1">
           <span>Song</span>
+          <i class="fa fa-sort"></i>
+        </div>
+        <div class="col-2">
+          <span>Artist</span>
+          <i class="fa fa-sort"></i>
         </div>
         <div class="col-3">
           <span>Album</span>
+          <i class="fa fa-sort"></i>
         </div>
-        <div class="col-2">
-          <span>Album Art</span>
+        <div class="col-1">
+          <span>Artwork</span>
         </div>
-        <div class="col-2">
+        <div class="col-1">
           <span>Listeners</span>
+          <i class="fa fa-sort"></i>
         </div>
         <div class="col-1">
           <span>Length</span>
+          <i class="fa fa-sort"></i>
         </div>
       </div>
     </div>
@@ -53,8 +58,21 @@
 
   <!-- Song List -->
   <section id="songs">
-    <div class="container">
-      <div class="row" id="track">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col-1">
+          <a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA" target="_blank">
+            <i class="far fa-play-circle fa-2x"></i>
+          </a>
+        </div>
+        <span class="col-3">Tiny Dancer (Live In Australia)</span>
+        <span class="col-2">Elton John</span>
+        <span class="col-3">Live In Australia</span>
+        <figure class="col-1 mt-3">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Live_in_australia.JPG" width=100% height=auto>
+        </figure>
+        <span class="col-1">9001</span>
+        <span class="col-1">6:36</span>
       </div>
     </div>
   </section>

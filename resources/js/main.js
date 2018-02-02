@@ -13,7 +13,14 @@ $(document).ready(function() {
 */
 
 Trackster.renderTracks = function(tracks) {
+  tracks.forEach(function() {
+    const trackHtml =
+      '<div class="row d-flex align-items-center">' +
+        '<div class="col-1">' +
+          '<a href="' + track.url
 
+
+  });
 };
 
 /*
@@ -22,10 +29,22 @@ Trackster.renderTracks = function(tracks) {
 */
 
 Trackster.searchTracksByTitle = async (title) => {
+  const responses = [];
+
   try {
-    const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${title}&api_key=${apiKey}&format=json`)
-    if (response.ok) {
-      console.log(response);
+    const response1 = await fetch(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${title}&api_key=${apiKey}&format=json`)
+    if (response1.ok) {
+      responses.push(response1);
+    }
+  }
+  catch (error) {
+    console.log(error);
+  }
+
+  try {
+    const response2 = await fetch(`http://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${title}&api_key=${apiKey}&format=json`)
+    if (response2.ok) {
+      responses.push(response2);
     }
   }
   catch (error) {

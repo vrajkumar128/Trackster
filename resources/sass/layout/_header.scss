@@ -5,8 +5,10 @@ header {
 
   .container {
     padding: 2.75rem 0;
+    border: 2px solid red;
 
     .row {
+      border: 2px solid red;
       #logo {
         font-family: Righteous, cursive;
         font-size: 2.5rem;
@@ -22,7 +24,7 @@ header {
 
       form {
         i,
-        input {
+          input {
           border-radius: 19px;
         }
 
@@ -49,7 +51,7 @@ header {
 
         i {
           color: $darkpurple;
-          background-color: rgb(255, 102, 204);
+          background-color: $lightpink;
           cursor: pointer;
 
           &:hover {
