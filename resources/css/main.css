@@ -1,60 +1,103 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous|Work+Sans:400,600");
 /* Universal Styles */
 body {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+}
 
 /* Header */
 header {
-  background-color: #23023f; }
-  header .container {
-    padding: 2.75rem 0;
-    border: 2px solid red; }
-    header .container .row {
-      border: 2px solid red; }
-      header .container .row #logo {
-        font-family: Righteous, cursive;
-        font-size: 2.5rem; }
-        header .container .row #logo a {
-          color: #ff00ab; }
-          header .container .row #logo a:hover {
-            text-decoration: none; }
-      header .container .row form i,
-      header .container .row form input {
-        border-radius: 19px; }
-      header .container .row form input {
-        margin-right: 0.625rem;
-        color: #4a4a4a; }
-        header .container .row form input::-webkit-input-placeholder {
-          color: #bfbfbf; }
-        header .container .row form input:-ms-input-placeholder {
-          color: #bfbfbf; }
-        header .container .row form input::-ms-input-placeholder {
-          color: #bfbfbf; }
-        header .container .row form input::placeholder {
-          color: #bfbfbf; }
-      header .container .row form i {
-        color: #23023f;
-        background-color: #ff66cc;
-        cursor: pointer; }
-        header .container .row form i:hover {
-          background-color: #ff00ab; }
+  background-color: #23023f;
+}
+
+header .container {
+  padding: 2.75rem 0;
+}
+
+header .container .row #logo {
+  font-family: Righteous, cursive;
+  font-size: 2.5rem;
+}
+
+header .container .row #logo a {
+  color: #ff00ab;
+}
+
+header .container .row #logo a:hover {
+  text-decoration: none;
+}
+
+header .container .row i,
+header .container .row input {
+  border-radius: 19px;
+}
+
+header .container .row input {
+  margin-right: 0.625rem;
+  color: #4a4a4a;
+}
+
+header .container .row input:focus {
+  outline: none;
+}
+
+header .container .row input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+header .container .row input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+header .container .row input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+header .container .row input::placeholder {
+  color: #bfbfbf;
+}
+
+header .container .row input::-webkit-search-cancel-button {
+  display: inline;
+}
+
+header .container .row i {
+  color: #23023f;
+  background-color: #ff66cc;
+  cursor: pointer;
+}
+
+header .container .row i:hover {
+  background-color: #ff00ab;
+}
+
+header .container .row i:active {
+  background-color: #ff00ab;
+}
 
 /* Column Headers */
 #columns {
   font-weight: 600;
   background-color: #6800ff;
-  color: white; }
+  color: white;
+}
 
 /* Song List */
-#songs {
-  font-size: 14px; }
-  #songs .container-fluid .row {
-    border-bottom: 1px solid #cccccc; }
-    #songs .container-fluid .row:hover {
-      background-color: #efedf2; }
-    #songs .container-fluid .row div a {
-      color: #ff66cc; }
-      #songs .container-fluid .row div a:hover {
-        color: #ff00ab; }
+#songs .container-fluid {
+  overflow-y: scroll;
+}
 
-/*# sourceMappingURL=main.css.map */
+#songs .container-fluid .row {
+  border-bottom: 1px solid #cccccc;
+}
+
+#songs .container-fluid .row:hover {
+  background-color: #efedf2;
+}
+
+#songs .container-fluid .row div a {
+  color: #ff66cc;
+}
+
+#songs .container-fluid .row div a:hover {
+  color: #ff00ab;
+}

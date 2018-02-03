@@ -5,10 +5,8 @@ header {
 
   .container {
     padding: 2.75rem 0;
-    border: 2px solid red;
 
     .row {
-      border: 2px solid red;
       #logo {
         font-family: Righteous, cursive;
         font-size: 2.5rem;
@@ -22,41 +20,51 @@ header {
         }
       }
 
-      form {
-        i,
-          input {
-          border-radius: 19px;
-        }
-
+      i,
         input {
-          margin-right: 0.625rem;
-          color: rgb(74, 74, 74);
+        border-radius: 19px;
+      }
 
-          &::-webkit-input-placeholder {
-            color: rgb(191, 191, 191);
-          }
+      input {
+        margin-right: 0.625rem;
+        color: rgb(74, 74, 74);
 
-          &:-ms-input-placeholder {
-            color: rgb(191, 191, 191);
-          }
-
-          &::-ms-input-placeholder {
-            color: rgb(191, 191, 191);
-          }
-
-          &::placeholder {
-            color: rgb(191, 191, 191);
-          }
+        &:focus {
+          outline: none;
         }
 
-        i {
-          color: $darkpurple;
-          background-color: $lightpink;
-          cursor: pointer;
+        &::-webkit-input-placeholder {
+          color: rgb(191, 191, 191);
+        }
 
-          &:hover {
-            background-color: $darkpink;
-          }
+        &:-ms-input-placeholder {
+          color: rgb(191, 191, 191);
+        }
+
+        &::-ms-input-placeholder {
+          color: rgb(191, 191, 191);
+        }
+
+        &::placeholder {
+          color: rgb(191, 191, 191);
+        }
+
+        &::-webkit-search-cancel-button {
+          display: inline;
+        }
+      }
+
+      i {
+        color: $darkpurple;
+        background-color: $lightpink;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $darkpink;
+        }
+
+        &:active {
+          background-color: $darkpink;
         }
       }
     }

@@ -14,43 +14,47 @@
 
   <!-- Header -->
   <header>
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <h1 class="col-xs-7 offset-xs-1" id="logo"><a href="#">trackster</a></h1>
-        <form class="form-inline ml-auto">
-          <input class="col-xs-2 py-1 px-4 pr-5" id="search-box" type="search" placeholder="Search" aria-label="Search">
-          <i class="col-xs-1 fa fa-search fa-lg px-4 py-3" id="search-button"></i>
-        </form>
+    <div class="container" role="presentation">
+      <div class="row d-flex align-items-center" role="presentation">
+        <div class="col-8" role="presentation">
+          <h1 id="logo"><a href="#">trackster</a></h1>
+        </div>
+        <div class="col-3" role="presentation">
+          <input class="px-3 py-1 w-100" id="search-box" type="search" placeholder="Search for songs" aria-label="Search" />
+        </div>
+        <div class="col-1" role="presentation">
+          <i class="fa fa-search fa-lg px-4 py-3 text-center" id="search-button" role="button"></i>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Column Headers -->
   <section id="columns">
-    <div class="container-fluid py-2">
-      <div class="row">
-        <div class="col-3 offset-1">
+    <div class="container-fluid py-2" role="presentation">
+      <div class="row" role="presentation">
+        <div class="col-3 offset-1 attribute">
           <span>Song</span>
-          <i class="fa fa-sort"></i>
+          <i class="fa fa-sort" role="button"></i>
         </div>
-        <div class="col-2">
+        <div class="col-2 attribute">
           <span>Artist</span>
-          <i class="fa fa-sort"></i>
+          <i class="fa fa-sort" role="button"></i>
         </div>
-        <div class="col-3">
+        <div class="col-3 attribute">
           <span>Album</span>
-          <i class="fa fa-sort"></i>
+          <i class="fa fa-sort" role="button"></i>
         </div>
-        <div class="col-1">
+        <div class="col-1 attribute">
           <span>Artwork</span>
         </div>
-        <div class="col-1">
+        <div class="col-1 attribute">
           <span>Listeners</span>
-          <i class="fa fa-sort"></i>
+          <i class="fa fa-sort" role="button"></i>
         </div>
-        <div class="col-1">
+        <div class="col-1 attribute">
           <span>Length</span>
-          <i class="fa fa-sort"></i>
+          <i class="fa fa-sort" role="button"></i>
         </div>
       </div>
     </div>
@@ -58,29 +62,13 @@
 
   <!-- Song List -->
   <section id="songs">
-    <div class="container-fluid">
-      <div class="row d-flex align-items-center">
-        <div class="col-1">
-          <a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA" target="_blank">
-            <i class="far fa-play-circle fa-2x"></i>
-          </a>
-        </div>
-        <span class="col-3">Tiny Dancer (Live In Australia)</span>
-        <span class="col-2">Elton John</span>
-        <span class="col-3">Live In Australia</span>
-        <figure class="col-1 mt-3">
-          <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Live_in_australia.JPG" width=100% height=auto>
-        </figure>
-        <span class="col-1">9001</span>
-        <span class="col-1">6:36</span>
-      </div>
+    <div class="container-fluid" role="presentation">
     </div>
   </section>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./resources/js/main.js"></script>
-  <script type="text/javascript" src="./resources/js/tests.js"></script>
 
 </body>
 
