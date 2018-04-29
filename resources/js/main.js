@@ -2,6 +2,7 @@ const Trackster = {};
 const apiKey = "65f045bd924b56ad4d062aa4acbee30d";
 const $trackList = $('#songs .container-fluid');
 
+
 $(document).ready(() => {
 
   // Pass the search box's input into .searchTracksByTitle() and log the returned responses
@@ -25,6 +26,16 @@ $(document).ready(() => {
 
 });
 
+// Convert milliseconds into a human-readable mm:ss format
+Trackster.msToTime = ms => {
+  let minutes = Math.floor(ms / 1000 / 60);
+  let seconds = ms / 1000 % 60;
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+  return `${minutes}:${seconds}`;
+};
+
 /*
   Given an array of track data, create the HTML for a Bootstrap row for each.
   Append each row to the container in the body to display all tracks.
@@ -46,7 +57,7 @@ Trackster.renderTracks = response => {
       '    <img class="w-100" src="' + response.track.album.image[0]["#text"] + '" alt="Album art" />' +
       '  </figure>' +
       '  <span class="col-1">' + response.track.listeners + '</span>' +
-      '  <span class="col-1">' + response.track.duration + '</span>' +
+      '  <span class="col-1">' + Trackster.msToTime(response.track.duration) + '</span>' +
       '</div>';
     $trackList.append(trackHtml);
   }

@@ -83,7 +83,8 @@ header .container .row i:active {
 
 /* Song List */
 #songs .container-fluid {
-  overflow-y: scroll;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 #songs .container-fluid .row {
